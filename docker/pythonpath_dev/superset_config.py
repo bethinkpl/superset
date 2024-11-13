@@ -117,3 +117,8 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+
+
+# Custom Bethink config
+WTF_CSRF_ENABLED=False
+FEATURE_FLAGS |= {"HORIZONTAL_FILTER_BAR": True}
